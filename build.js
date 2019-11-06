@@ -2,6 +2,7 @@ require('dotenv').config();
 
 const path = require('path');
 const webpack = require('webpack');
+const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 const paths = {
   client: path.resolve(__dirname, 'client'),

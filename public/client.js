@@ -90,10 +90,22 @@
 /*!*************************!*\
   !*** ./client/index.js ***!
   \*************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _javascripts_web_socket__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./javascripts/web-socket */ \"./client/javascripts/web-socket.js\");\n/* harmony import */ var _javascripts_web_socket__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_javascripts_web_socket__WEBPACK_IMPORTED_MODULE_0__);\n\n\n\n//# sourceURL=webpack:///./client/index.js?");
+
+/***/ }),
+
+/***/ "./client/javascripts/web-socket.js":
+/*!******************************************!*\
+  !*** ./client/javascripts/web-socket.js ***!
+  \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("\n\n//# sourceURL=webpack:///./client/index.js?");
+eval("(function() {\n\n  var ws = WebSocket('/');\n\n  ws.onclose = function() {\n    console.log('ws.onclose');\n  };\n\n  ws.onerror = function() {\n    console.log('ws.onerror', {\n      protocol: ws.protocol,\n      readyState: ws.readyState,\n      url: ws.url\n    });\n  };\n\n  ws.onmessage = function() {\n    console.log('ws.onmessage');\n  };\n\n  ws.onopen = function() {\n    console.log('ws.onopen');\n  };\n\n}())\n\n\n//# sourceURL=webpack:///./client/javascripts/web-socket.js?");
 
 /***/ })
 
