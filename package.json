@@ -1,0 +1,32 @@
+{
+  "name": "framework",
+  "version": "1.0.0",
+  "description": "Framework on which to build other applications",
+  "main": "build.js",
+  "scripts": {
+    "build": "node ./build.js",
+    "start": "node ./public/server.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scotmcc/framework.git"
+  },
+  "keywords": [],
+  "author": "Scot McConnaughay <scotmcc@gmail.com> (http://cutlass.tech/)",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/scotmcc/framework/issues"
+  },
+  "homepage": "https://github.com/scotmcc/framework#readme",
+  "dependencies": {
+    "dotenv": "8.2.0",
+    "express": "4.17.1",
+    "mongoose": "5.7.8"
+  },
+  "devDependencies": {
+    "@babel/core": "7.7.0",
+    "babel-loader": "8.0.6",
+    "webpack": "4.41.2"
+  }
+}
